@@ -1,0 +1,14 @@
+PODS:
+  - RTIconButton (0.1.0)
+
+DEPENDENCIES:
+  - RTIconButton (from `../`)
+
+EXTERNAL SOURCES:
+  RTIconButton:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RTIconButton: 3318d533657c54c417566d47cd648ee9e3948675
+
+COCOAPODS: 0.38.2

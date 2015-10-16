@@ -1,0 +1,25 @@
+{
+  "name": "RTIconButton",
+  "version": "0.1.0",
+  "summary": "A short description of RTIconButton.",
+  "description": "",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RTIconButton",
+  "license": "MIT",
+  "authors": {
+    "rickytan": "ricky.tan.xin@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RTIconButton.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "RTIconButton": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}

@@ -1,0 +1,6 @@
+framework module RTIconButton {
+  umbrella header "RTIconButton-umbrella.h"
+
+  export *
+  module * { export * }
+}
