@@ -7,117 +7,138 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		051ED3E0468083CB8FC5B3445589C674 /* RTIconButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 29BFF72B6EA4A8ED7E478B12FDC57F4A /* RTIconButton.bundle */; };
-		23383C00ACD317591028B7201B609D8A /* RTIconButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 752A08A9736313CAF9FB8B6C0B044E97 /* RTIconButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4E2F3CF7D71EA1289F60EF09365A39D6 /* RTIconButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 115784ACDB85D1929E4E0E1E799F73AD /* RTIconButton-dummy.m */; };
-		4F2C8D7AAEF43802349561B6D2539A69 /* Pods-RTIconButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E03DD6C6060D1AC661FAAD7629927C /* Pods-RTIconButton_Example-dummy.m */; };
-		677038BCAF7A2033F42646A5F16F9ACE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01888806CE2A6AE84E547969BFC5891E /* Foundation.framework */; };
-		6B45835174C58E35800E907D264A92D1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01888806CE2A6AE84E547969BFC5891E /* Foundation.framework */; };
-		89D195E7F36E945317FF67EA6DA47094 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01888806CE2A6AE84E547969BFC5891E /* Foundation.framework */; };
-		9CF7C2801BB923E700938C1D /* RTIconButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 9CF7C27E1BB923E700938C1D /* RTIconButton.h */; };
-		9CF7C2811BB923E700938C1D /* RTIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 9CF7C27F1BB923E700938C1D /* RTIconButton.m */; };
-		BB2037618598B24232BD3EBF9E90F361 /* Pods-RTIconButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 27F9228057AFAC0EB30AE7842B5207FB /* Pods-RTIconButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9A7E48779AB40E4BCA72D4D3D70283B /* Pods-RTIconButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9303C9C40CB1509068B8B734BCF0CF0B /* Pods-RTIconButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DB9969B48DAE1C0C67C0CE1B79A924E0 /* Pods-RTIconButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F6F90DE35C7718D5479717BAED6517 /* Pods-RTIconButton_Tests-dummy.m */; };
+		0B3A35155C3609EC83C66811F1B191F7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		2423DACEA7D4D2E494A06EF7FF5E0F24 /* RTIconButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 470EFA6832CAB169C5493359E9B4AAAC /* RTIconButton-dummy.m */; };
+		5514C55968B50D02BC765CCC3EF36734 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		55926AE3848DD31D1C9309D25CAD5C27 /* Pods-RTIconButton_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E26FAF14AC7001376D3D95E44358DE51 /* Pods-RTIconButton_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6B4A04FE72EE35F0E5B28B5A27D3D999 /* RTIconButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 077CD6DCCA8AAD7F68B654CEF10AD3D9 /* RTIconButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BB17783C3F164255356AEBA87ED5BA9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		9B566AB06C1E859F01A5572810EC4E12 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		BB053467D5C9DC69C4AED5F29C973E19 /* RTIconButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D7D8DE66160F12EC46542BD76663590 /* RTIconButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BB7E423A599EC200636BA48572F0671A /* Pods-RTIconButton_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 69E12AA70423EC20B87CE0DE19ED9C3C /* Pods-RTIconButton_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BE7E04B245FB8703F2E7F69FE7B1F22B /* Pods-RTIconButton_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 704B090FDFD06B0686756B366CADD3DA /* Pods-RTIconButton_Example-dummy.m */; };
+		D6101E70F25D0F0EA22F1B296625BAFB /* Pods-RTIconButton_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E322AE70CA775798AA5AAB0717A9117 /* Pods-RTIconButton_Tests-dummy.m */; };
+		E7093912963F72669BD44DE1A4CC2FB6 /* RTIconButton.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F9D4E17C18277CB7ECAB6568302AE719 /* RTIconButton.bundle */; };
+		F7FC71ABAE678749BAE95146B0C8A0F1 /* RTIconButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 827391F68BABB6D8714B68B7A6CE0B71 /* RTIconButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1368FC24161DA661F0B476E6E8B25B10 /* PBXContainerItemProxy */ = {
+		2D095904C9B0C43CDA25A18DB5ABA65F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C5EECFBB1AEDF2BFD2FAC03380ABCFDE;
-			remoteInfo = "RTIconButton-RTIconButton";
-		};
-		379E909D2F8927EA2BAD7C6D7421E556 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9F243ACCAA49998237DCC19ED8F54F6E;
+			remoteGlobalIDString = C27E1D65329C165BB4FDC191E29DBB6E;
 			remoteInfo = RTIconButton;
 		};
-		A3B3917C6FCB235DDC2DE22BBB4B792C /* PBXContainerItemProxy */ = {
+		78E6EBD4E04212ABFC86E4C6025EE713 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 9F243ACCAA49998237DCC19ED8F54F6E;
+			remoteGlobalIDString = 30963B4A68BD483C74261124885CD847;
+			remoteInfo = "RTIconButton-RTIconButton";
+		};
+		E402D4BBAC1C4508E0B087B0B2D642FE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C27E1D65329C165BB4FDC191E29DBB6E;
 			remoteInfo = RTIconButton;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01888806CE2A6AE84E547969BFC5891E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		02392188D7923F3553A2238350AC1281 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		077CD6DCCA8AAD7F68B654CEF10AD3D9 /* RTIconButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RTIconButton.h; sourceTree = "<group>"; };
+		0953BC7FAF1EF23472507B6955C67AEC /* Pods-RTIconButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RTIconButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1050D8617F763CFDE38E987F28131A8E /* Pods-RTIconButton_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RTIconButton_Tests.modulemap"; sourceTree = "<group>"; };
-		115784ACDB85D1929E4E0E1E799F73AD /* RTIconButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RTIconButton-dummy.m"; sourceTree = "<group>"; };
 		126C4DD3920EA2ED5570C3DE32E9CEE6 /* Pods-RTIconButton_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RTIconButton_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		128E9DE670E27D4546E8ABBCB60AEC6A /* Pods-RTIconButton_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RTIconButton_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		16514B6A4C3AFDE194D04CF3C12F73EA /* Pods-RTIconButton_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RTIconButton_Example-resources.sh"; sourceTree = "<group>"; };
-		27F9228057AFAC0EB30AE7842B5207FB /* Pods-RTIconButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RTIconButton_Tests-umbrella.h"; sourceTree = "<group>"; };
-		29BFF72B6EA4A8ED7E478B12FDC57F4A /* RTIconButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTIconButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E2B362AC285E8A1C4CE2443DC4B0403 /* RTIconButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RTIconButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C54C5E882D177B622F1BD927C191E6F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D7D8DE66160F12EC46542BD76663590 /* RTIconButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTIconButton-umbrella.h"; sourceTree = "<group>"; };
+		3B99CD24AA7E7EAD1420A1EABF72CD0D /* RTIconButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RTIconButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		470EFA6832CAB169C5493359E9B4AAAC /* RTIconButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RTIconButton-dummy.m"; sourceTree = "<group>"; };
+		53B0D87226A5667DB8B7999E3549257C /* RTIconButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTIconButton-prefix.pch"; sourceTree = "<group>"; };
+		5855B3B0822CE0D37B7EFBFB53C67175 /* Pods-RTIconButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RTIconButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		658107708F8A02EA14B5C148D08A1B77 /* Pods-RTIconButton_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RTIconButton_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6C544CA13B07F87E5CC37E8F4E1F654B /* RTIconButton-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "RTIconButton-Private.xcconfig"; sourceTree = "<group>"; };
+		69E12AA70423EC20B87CE0DE19ED9C3C /* Pods-RTIconButton_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RTIconButton_Tests-umbrella.h"; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		704B090FDFD06B0686756B366CADD3DA /* Pods-RTIconButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RTIconButton_Example-dummy.m"; sourceTree = "<group>"; };
 		74F00739654F2315C277B30221A38D80 /* Pods-RTIconButton_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RTIconButton_Example.modulemap"; sourceTree = "<group>"; };
-		752A08A9736313CAF9FB8B6C0B044E97 /* RTIconButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTIconButton-umbrella.h"; sourceTree = "<group>"; };
 		78F0B272A49DA0AD32ED2E2D8E81BD97 /* Pods-RTIconButton_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RTIconButton_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7C8119518C5447D8E896580FCD3E2FF7 /* RTIconButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RTIconButton.modulemap; sourceTree = "<group>"; };
-		823C8AE2FBAB05C4DA7EA0C2E28156FB /* RTIconButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RTIconButton.xcconfig; sourceTree = "<group>"; };
-		82A4B46FF34BFF7A9219A099B1E52158 /* RTIconButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTIconButton-prefix.pch"; sourceTree = "<group>"; };
-		9303C9C40CB1509068B8B734BCF0CF0B /* Pods-RTIconButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RTIconButton_Example-umbrella.h"; sourceTree = "<group>"; };
-		949872D95396E8B399D96AB8C6DB2781 /* Pods-RTIconButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RTIconButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		9CF7C27E1BB923E700938C1D /* RTIconButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTIconButton.h; sourceTree = "<group>"; };
-		9CF7C27F1BB923E700938C1D /* RTIconButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTIconButton.m; sourceTree = "<group>"; };
-		A0F6F90DE35C7718D5479717BAED6517 /* Pods-RTIconButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RTIconButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		827391F68BABB6D8714B68B7A6CE0B71 /* RTIconButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RTIconButton.m; sourceTree = "<group>"; };
+		8E322AE70CA775798AA5AAB0717A9117 /* Pods-RTIconButton_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RTIconButton_Tests-dummy.m"; sourceTree = "<group>"; };
+		A1E986AE6755422CDA6211AA51005AE4 /* Pods_RTIconButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A25D7F565B79D8BC21CFA1187748AF6B /* Pods-RTIconButton_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RTIconButton_Tests-resources.sh"; sourceTree = "<group>"; };
+		B0D4525A4956FFD5FDA12BAC5292C921 /* RTIconButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RTIconButton.modulemap; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BE43F880ACDE8D28094F597D43B71697 /* Pods-RTIconButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RTIconButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		C1E415A80951425341748FF1A6F30D14 /* Pods-RTIconButton_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RTIconButton_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		C43D6A87F910CE26AFDF2316E643459A /* Pods-RTIconButton_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RTIconButton_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		CF366E909862115B1C58D44A9A8878D1 /* Pods-RTIconButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RTIconButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D1B48B98B6470622BB7298DC8D6B3BC7 /* Pods-RTIconButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RTIconButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		D39158C8E2D30F542934387C92DA809A /* Pods-RTIconButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RTIconButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		DB42A35146F478C0CBAD01BD9D368F18 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E6CB7E33DEA2119D666B02C2B19C1D38 /* Pods_RTIconButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E6E7541B2D4FC6CD13A15B4386FF3FCD /* Pods_RTIconButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E7F386D4B78A73E2E5B15CE63A6CD146 /* Pods-RTIconButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RTIconButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		F0E03DD6C6060D1AC661FAAD7629927C /* Pods-RTIconButton_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RTIconButton_Example-dummy.m"; sourceTree = "<group>"; };
+		E019E00A16BEE1D3618E88B59BBC547F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0955E6EF30CC9E259989401E8BF1DC7 /* Pods_RTIconButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E26FAF14AC7001376D3D95E44358DE51 /* Pods-RTIconButton_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RTIconButton_Example-umbrella.h"; sourceTree = "<group>"; };
+		EC4A5FD48234C0D7CCD38DEC09043220 /* RTIconButton.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RTIconButton.xcconfig; sourceTree = "<group>"; };
+		F9D4E17C18277CB7ECAB6568302AE719 /* RTIconButton.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTIconButton.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		15808F82ECD7AF98E2417A6CF5036BDD /* Frameworks */ = {
+		B9736091BC2C93F19ACE76BA69BC640F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6B45835174C58E35800E907D264A92D1 /* Foundation.framework in Frameworks */,
+				7BB17783C3F164255356AEBA87ED5BA9 /* Foundation.framework in Frameworks */,
+				5514C55968B50D02BC765CCC3EF36734 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		52EF704EFE41B4FC5350A0F032FCA9E0 /* Frameworks */ = {
+		E00DAFB4DF1D0DDD9A0E6F49DC42FAFB /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89D195E7F36E945317FF67EA6DA47094 /* Foundation.framework in Frameworks */,
+				0B3A35155C3609EC83C66811F1B191F7 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7DFBE45FCC2BAE6E937E2E1B0BC76215 /* Frameworks */ = {
+		E1BE3EC6E6A198393E5135EADCAE8D73 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				677038BCAF7A2033F42646A5F16F9ACE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		996D5DC0750936D2A3480E462B9F71E4 /* Frameworks */ = {
+		FB4EF8675F3178A6692FD86B595C54BA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B566AB06C1E859F01A5572810EC4E12 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0CA5406E81BB565372BC3D2CA46BBB4B /* RTIconButton */ = {
+			isa = PBXGroup;
+			children = (
+				F05502F1A7E89F39EEFC71C68E5E6C4F /* Pod */,
+				F1E388C027303E199EBABE513A368D46 /* Support Files */,
+			);
+			name = RTIconButton;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		3F0503B6AAB316385F7118AD48E45058 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,12 +148,23 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		53F661C0CA7190D2CF05023FB33D61E4 /* iOS */ = {
+		423EC466ED58C7779910A9786C692285 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				01888806CE2A6AE84E547969BFC5891E /* Foundation.framework */,
+				E0955E6EF30CC9E259989401E8BF1DC7 /* Pods_RTIconButton_Example.framework */,
+				A1E986AE6755422CDA6211AA51005AE4 /* Pods_RTIconButton_Tests.framework */,
+				F9D4E17C18277CB7ECAB6568302AE719 /* RTIconButton.bundle */,
+				3B99CD24AA7E7EAD1420A1EABF72CD0D /* RTIconButton.framework */,
 			);
-			name = iOS;
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -140,43 +172,10 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				FF5C97B7DE522A0B6B83DA36365F06CE /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				CCA510CFBEA2D207524CDA0D73C3B561 /* Products */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				423EC466ED58C7779910A9786C692285 /* Products */,
 				3F0503B6AAB316385F7118AD48E45058 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		813196E4DAA6F15E4AF02119B97E1F97 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				5C54C5E882D177B622F1BD927C191E6F /* Info.plist */,
-				7C8119518C5447D8E896580FCD3E2FF7 /* RTIconButton.modulemap */,
-				823C8AE2FBAB05C4DA7EA0C2E28156FB /* RTIconButton.xcconfig */,
-				6C544CA13B07F87E5CC37E8F4E1F654B /* RTIconButton-Private.xcconfig */,
-				115784ACDB85D1929E4E0E1E799F73AD /* RTIconButton-dummy.m */,
-				82A4B46FF34BFF7A9219A099B1E52158 /* RTIconButton-prefix.pch */,
-				752A08A9736313CAF9FB8B6C0B044E97 /* RTIconButton-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/RTIconButton";
-			sourceTree = "<group>";
-		};
-		8A642684CE915C2E2DE1D8C0CBE0CF47 /* RTIconButton */ = {
-			isa = PBXGroup;
-			children = (
-				D01170B58CB1B0C6791B9C513703BEBB /* Pod */,
-				813196E4DAA6F15E4AF02119B97E1F97 /* Support Files */,
-			);
-			name = RTIconButton;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				53F661C0CA7190D2CF05023FB33D61E4 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		C234D017A923B5DE904A14D4CDE31FC7 /* Pods-RTIconButton_Example */ = {
@@ -186,43 +185,24 @@
 				74F00739654F2315C277B30221A38D80 /* Pods-RTIconButton_Example.modulemap */,
 				C43D6A87F910CE26AFDF2316E643459A /* Pods-RTIconButton_Example-acknowledgements.markdown */,
 				658107708F8A02EA14B5C148D08A1B77 /* Pods-RTIconButton_Example-acknowledgements.plist */,
-				F0E03DD6C6060D1AC661FAAD7629927C /* Pods-RTIconButton_Example-dummy.m */,
+				704B090FDFD06B0686756B366CADD3DA /* Pods-RTIconButton_Example-dummy.m */,
 				78F0B272A49DA0AD32ED2E2D8E81BD97 /* Pods-RTIconButton_Example-frameworks.sh */,
 				16514B6A4C3AFDE194D04CF3C12F73EA /* Pods-RTIconButton_Example-resources.sh */,
-				9303C9C40CB1509068B8B734BCF0CF0B /* Pods-RTIconButton_Example-umbrella.h */,
-				BE43F880ACDE8D28094F597D43B71697 /* Pods-RTIconButton_Example.debug.xcconfig */,
-				CF366E909862115B1C58D44A9A8878D1 /* Pods-RTIconButton_Example.release.xcconfig */,
+				E26FAF14AC7001376D3D95E44358DE51 /* Pods-RTIconButton_Example-umbrella.h */,
+				0953BC7FAF1EF23472507B6955C67AEC /* Pods-RTIconButton_Example.debug.xcconfig */,
+				D39158C8E2D30F542934387C92DA809A /* Pods-RTIconButton_Example.release.xcconfig */,
 			);
 			name = "Pods-RTIconButton_Example";
 			path = "Target Support Files/Pods-RTIconButton_Example";
 			sourceTree = "<group>";
 		};
-		C4858C4C77EF855FF94AD85230A2F87C /* Classes */ = {
+		C508E3726740B7748D97DC5C673D1109 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				9CF7C27E1BB923E700938C1D /* RTIconButton.h */,
-				9CF7C27F1BB923E700938C1D /* RTIconButton.m */,
+				077CD6DCCA8AAD7F68B654CEF10AD3D9 /* RTIconButton.h */,
+				827391F68BABB6D8714B68B7A6CE0B71 /* RTIconButton.m */,
 			);
 			path = Classes;
-			sourceTree = "<group>";
-		};
-		CCA510CFBEA2D207524CDA0D73C3B561 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				E6E7541B2D4FC6CD13A15B4386FF3FCD /* Pods_RTIconButton_Example.framework */,
-				E6CB7E33DEA2119D666B02C2B19C1D38 /* Pods_RTIconButton_Tests.framework */,
-				29BFF72B6EA4A8ED7E478B12FDC57F4A /* RTIconButton.bundle */,
-				2E2B362AC285E8A1C4CE2443DC4B0403 /* RTIconButton.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		D01170B58CB1B0C6791B9C513703BEBB /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				C4858C4C77EF855FF94AD85230A2F87C /* Classes */,
-			);
-			path = Pod;
 			sourceTree = "<group>";
 		};
 		F0406BCE2F0A0D91D6AE1CFC41F9D35F /* Pods-RTIconButton_Tests */ = {
@@ -232,21 +212,43 @@
 				1050D8617F763CFDE38E987F28131A8E /* Pods-RTIconButton_Tests.modulemap */,
 				C1E415A80951425341748FF1A6F30D14 /* Pods-RTIconButton_Tests-acknowledgements.markdown */,
 				126C4DD3920EA2ED5570C3DE32E9CEE6 /* Pods-RTIconButton_Tests-acknowledgements.plist */,
-				A0F6F90DE35C7718D5479717BAED6517 /* Pods-RTIconButton_Tests-dummy.m */,
+				8E322AE70CA775798AA5AAB0717A9117 /* Pods-RTIconButton_Tests-dummy.m */,
 				128E9DE670E27D4546E8ABBCB60AEC6A /* Pods-RTIconButton_Tests-frameworks.sh */,
 				A25D7F565B79D8BC21CFA1187748AF6B /* Pods-RTIconButton_Tests-resources.sh */,
-				27F9228057AFAC0EB30AE7842B5207FB /* Pods-RTIconButton_Tests-umbrella.h */,
-				949872D95396E8B399D96AB8C6DB2781 /* Pods-RTIconButton_Tests.debug.xcconfig */,
-				E7F386D4B78A73E2E5B15CE63A6CD146 /* Pods-RTIconButton_Tests.release.xcconfig */,
+				69E12AA70423EC20B87CE0DE19ED9C3C /* Pods-RTIconButton_Tests-umbrella.h */,
+				5855B3B0822CE0D37B7EFBFB53C67175 /* Pods-RTIconButton_Tests.debug.xcconfig */,
+				D1B48B98B6470622BB7298DC8D6B3BC7 /* Pods-RTIconButton_Tests.release.xcconfig */,
 			);
 			name = "Pods-RTIconButton_Tests";
 			path = "Target Support Files/Pods-RTIconButton_Tests";
 			sourceTree = "<group>";
 		};
+		F05502F1A7E89F39EEFC71C68E5E6C4F /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				C508E3726740B7748D97DC5C673D1109 /* Classes */,
+			);
+			path = Pod;
+			sourceTree = "<group>";
+		};
+		F1E388C027303E199EBABE513A368D46 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E019E00A16BEE1D3618E88B59BBC547F /* Info.plist */,
+				B0D4525A4956FFD5FDA12BAC5292C921 /* RTIconButton.modulemap */,
+				EC4A5FD48234C0D7CCD38DEC09043220 /* RTIconButton.xcconfig */,
+				470EFA6832CAB169C5493359E9B4AAAC /* RTIconButton-dummy.m */,
+				53B0D87226A5667DB8B7999E3549257C /* RTIconButton-prefix.pch */,
+				2D7D8DE66160F12EC46542BD76663590 /* RTIconButton-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RTIconButton";
+			sourceTree = "<group>";
+		};
 		FF5C97B7DE522A0B6B83DA36365F06CE /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				8A642684CE915C2E2DE1D8C0CBE0CF47 /* RTIconButton */,
+				0CA5406E81BB565372BC3D2CA46BBB4B /* RTIconButton */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -254,78 +256,59 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		487CD85536E98234B4BBF1652907F71D /* Headers */ = {
+		95340DF5607FDF33361BB55574FD5AFA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BB2037618598B24232BD3EBF9E90F361 /* Pods-RTIconButton_Tests-umbrella.h in Headers */,
+				BB053467D5C9DC69C4AED5F29C973E19 /* RTIconButton-umbrella.h in Headers */,
+				6B4A04FE72EE35F0E5B28B5A27D3D999 /* RTIconButton.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A7F60967468DE2392F1E34E425732C8B /* Headers */ = {
+		A4346986FAB931D7B00BF4B1EDF90D81 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C9A7E48779AB40E4BCA72D4D3D70283B /* Pods-RTIconButton_Example-umbrella.h in Headers */,
+				BB7E423A599EC200636BA48572F0671A /* Pods-RTIconButton_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AAE5099EAC7F8945FECB0AB0EBDB9057 /* Headers */ = {
+		F872A76BBDEF0D92C89529BE3CECA72C /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23383C00ACD317591028B7201B609D8A /* RTIconButton-umbrella.h in Headers */,
-				9CF7C2801BB923E700938C1D /* RTIconButton.h in Headers */,
+				55926AE3848DD31D1C9309D25CAD5C27 /* Pods-RTIconButton_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		6241A4CAD4784B31401FCFFC78ACC44F /* Pods-RTIconButton_Tests */ = {
+		21B3746E3F0F38394B286B91D388C345 /* Pods-RTIconButton_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A918A08D1D0B6C257A9C9517EB241FF2 /* Build configuration list for PBXNativeTarget "Pods-RTIconButton_Tests" */;
+			buildConfigurationList = F95749C8B4E0F5F30297B61965B48EF5 /* Build configuration list for PBXNativeTarget "Pods-RTIconButton_Example" */;
 			buildPhases = (
-				43B6D0F21851D323CD9A845FABA97312 /* Sources */,
-				7DFBE45FCC2BAE6E937E2E1B0BC76215 /* Frameworks */,
-				487CD85536E98234B4BBF1652907F71D /* Headers */,
+				E5F01ECC47D1A24483EE997CA52D811E /* Sources */,
+				FB4EF8675F3178A6692FD86B595C54BA /* Frameworks */,
+				F872A76BBDEF0D92C89529BE3CECA72C /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				B67C879C524A94F854831B02BB592924 /* PBXTargetDependency */,
+				4C78A933BA8124136EB5E71A855DA6DA /* PBXTargetDependency */,
 			);
-			name = "Pods-RTIconButton_Tests";
-			productName = "Pods-RTIconButton_Tests";
-			productReference = E6CB7E33DEA2119D666B02C2B19C1D38 /* Pods_RTIconButton_Tests.framework */;
+			name = "Pods-RTIconButton_Example";
+			productName = "Pods-RTIconButton_Example";
+			productReference = E0955E6EF30CC9E259989401E8BF1DC7 /* Pods_RTIconButton_Example.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9F243ACCAA49998237DCC19ED8F54F6E /* RTIconButton */ = {
+		30963B4A68BD483C74261124885CD847 /* RTIconButton-RTIconButton */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CCFF675CC2C5343B70618070B5635A0B /* Build configuration list for PBXNativeTarget "RTIconButton" */;
+			buildConfigurationList = 987D63577E8D958AE648785CA12282C4 /* Build configuration list for PBXNativeTarget "RTIconButton-RTIconButton" */;
 			buildPhases = (
-				D55FE785F4D2EA454BA3C78D3C41B2F9 /* Sources */,
-				52EF704EFE41B4FC5350A0F032FCA9E0 /* Frameworks */,
-				1706932BAF071BEE0C33211349F92FD7 /* Resources */,
-				AAE5099EAC7F8945FECB0AB0EBDB9057 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C5E5FB6D908AB9FABA5736736591C2A4 /* PBXTargetDependency */,
-			);
-			name = RTIconButton;
-			productName = RTIconButton;
-			productReference = 2E2B362AC285E8A1C4CE2443DC4B0403 /* RTIconButton.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C5EECFBB1AEDF2BFD2FAC03380ABCFDE /* RTIconButton-RTIconButton */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 06747E419C41A91D8CC2BB157348EE20 /* Build configuration list for PBXNativeTarget "RTIconButton-RTIconButton" */;
-			buildPhases = (
-				E006FC1216B4D4D97B19FCB1A83D1657 /* Sources */,
-				996D5DC0750936D2A3480E462B9F71E4 /* Frameworks */,
-				406AED511B81F126BE5960F7EE61363F /* Resources */,
+				E1528F2F1FE68855D76FB1C2CD220309 /* Sources */,
+				E1BE3EC6E6A198393E5135EADCAE8D73 /* Frameworks */,
+				5A131F743A1D8694FE25C0F3B25FE8ED /* Resources */,
 			);
 			buildRules = (
 			);
@@ -333,25 +316,44 @@
 			);
 			name = "RTIconButton-RTIconButton";
 			productName = "RTIconButton-RTIconButton";
-			productReference = 29BFF72B6EA4A8ED7E478B12FDC57F4A /* RTIconButton.bundle */;
+			productReference = F9D4E17C18277CB7ECAB6568302AE719 /* RTIconButton.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		FA88922108FB1269DCBDB54B0BDB75ED /* Pods-RTIconButton_Example */ = {
+		9B235F575A55371FC5B9C0585BF19DBA /* Pods-RTIconButton_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17FA35BD552C87B99F57AF4A5E4FCC9F /* Build configuration list for PBXNativeTarget "Pods-RTIconButton_Example" */;
+			buildConfigurationList = 6CC2546FCAB19523DD00F957092B87F3 /* Build configuration list for PBXNativeTarget "Pods-RTIconButton_Tests" */;
 			buildPhases = (
-				A2440985D86D586CBF0ACC86564E70D1 /* Sources */,
-				15808F82ECD7AF98E2417A6CF5036BDD /* Frameworks */,
-				A7F60967468DE2392F1E34E425732C8B /* Headers */,
+				F2B0C7DB5220AED749B6605F3AE3C29E /* Sources */,
+				E00DAFB4DF1D0DDD9A0E6F49DC42FAFB /* Frameworks */,
+				A4346986FAB931D7B00BF4B1EDF90D81 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				61D3287EA404C2FEBBF9593A95D1C17C /* PBXTargetDependency */,
+				E69768F3A890E3CE5D73737B90991B7F /* PBXTargetDependency */,
 			);
-			name = "Pods-RTIconButton_Example";
-			productName = "Pods-RTIconButton_Example";
-			productReference = E6E7541B2D4FC6CD13A15B4386FF3FCD /* Pods_RTIconButton_Example.framework */;
+			name = "Pods-RTIconButton_Tests";
+			productName = "Pods-RTIconButton_Tests";
+			productReference = A1E986AE6755422CDA6211AA51005AE4 /* Pods_RTIconButton_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C27E1D65329C165BB4FDC191E29DBB6E /* RTIconButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2D197AC1DDC1C04757AE9A176EC4730E /* Build configuration list for PBXNativeTarget "RTIconButton" */;
+			buildPhases = (
+				4994BB8B97DF49AA6A909AF70FC74CDB /* Sources */,
+				B9736091BC2C93F19ACE76BA69BC640F /* Frameworks */,
+				B3C361302B74EB3B2F1BA1068AECE30C /* Resources */,
+				95340DF5607FDF33361BB55574FD5AFA /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0521E7735E9936CDB5DEFD44E1C7193F /* PBXTargetDependency */,
+			);
+			name = RTIconButton;
+			productName = RTIconButton;
+			productReference = 3B99CD24AA7E7EAD1420A1EABF72CD0D /* RTIconButton.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -371,89 +373,89 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = CCA510CFBEA2D207524CDA0D73C3B561 /* Products */;
+			productRefGroup = 423EC466ED58C7779910A9786C692285 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				FA88922108FB1269DCBDB54B0BDB75ED /* Pods-RTIconButton_Example */,
-				6241A4CAD4784B31401FCFFC78ACC44F /* Pods-RTIconButton_Tests */,
-				9F243ACCAA49998237DCC19ED8F54F6E /* RTIconButton */,
-				C5EECFBB1AEDF2BFD2FAC03380ABCFDE /* RTIconButton-RTIconButton */,
+				21B3746E3F0F38394B286B91D388C345 /* Pods-RTIconButton_Example */,
+				9B235F575A55371FC5B9C0585BF19DBA /* Pods-RTIconButton_Tests */,
+				C27E1D65329C165BB4FDC191E29DBB6E /* RTIconButton */,
+				30963B4A68BD483C74261124885CD847 /* RTIconButton-RTIconButton */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1706932BAF071BEE0C33211349F92FD7 /* Resources */ = {
+		5A131F743A1D8694FE25C0F3B25FE8ED /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				051ED3E0468083CB8FC5B3445589C674 /* RTIconButton.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		406AED511B81F126BE5960F7EE61363F /* Resources */ = {
+		B3C361302B74EB3B2F1BA1068AECE30C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7093912963F72669BD44DE1A4CC2FB6 /* RTIconButton.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		43B6D0F21851D323CD9A845FABA97312 /* Sources */ = {
+		4994BB8B97DF49AA6A909AF70FC74CDB /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB9969B48DAE1C0C67C0CE1B79A924E0 /* Pods-RTIconButton_Tests-dummy.m in Sources */,
+				2423DACEA7D4D2E494A06EF7FF5E0F24 /* RTIconButton-dummy.m in Sources */,
+				F7FC71ABAE678749BAE95146B0C8A0F1 /* RTIconButton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2440985D86D586CBF0ACC86564E70D1 /* Sources */ = {
+		E1528F2F1FE68855D76FB1C2CD220309 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F2C8D7AAEF43802349561B6D2539A69 /* Pods-RTIconButton_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D55FE785F4D2EA454BA3C78D3C41B2F9 /* Sources */ = {
+		E5F01ECC47D1A24483EE997CA52D811E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CF7C2811BB923E700938C1D /* RTIconButton.m in Sources */,
-				4E2F3CF7D71EA1289F60EF09365A39D6 /* RTIconButton-dummy.m in Sources */,
+				BE7E04B245FB8703F2E7F69FE7B1F22B /* Pods-RTIconButton_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E006FC1216B4D4D97B19FCB1A83D1657 /* Sources */ = {
+		F2B0C7DB5220AED749B6605F3AE3C29E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6101E70F25D0F0EA22F1B296625BAFB /* Pods-RTIconButton_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		61D3287EA404C2FEBBF9593A95D1C17C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RTIconButton;
-			target = 9F243ACCAA49998237DCC19ED8F54F6E /* RTIconButton */;
-			targetProxy = A3B3917C6FCB235DDC2DE22BBB4B792C /* PBXContainerItemProxy */;
-		};
-		B67C879C524A94F854831B02BB592924 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RTIconButton;
-			target = 9F243ACCAA49998237DCC19ED8F54F6E /* RTIconButton */;
-			targetProxy = 379E909D2F8927EA2BAD7C6D7421E556 /* PBXContainerItemProxy */;
-		};
-		C5E5FB6D908AB9FABA5736736591C2A4 /* PBXTargetDependency */ = {
+		0521E7735E9936CDB5DEFD44E1C7193F /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "RTIconButton-RTIconButton";
-			target = C5EECFBB1AEDF2BFD2FAC03380ABCFDE /* RTIconButton-RTIconButton */;
-			targetProxy = 1368FC24161DA661F0B476E6E8B25B10 /* PBXContainerItemProxy */;
+			target = 30963B4A68BD483C74261124885CD847 /* RTIconButton-RTIconButton */;
+			targetProxy = 78E6EBD4E04212ABFC86E4C6025EE713 /* PBXContainerItemProxy */;
+		};
+		4C78A933BA8124136EB5E71A855DA6DA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RTIconButton;
+			target = C27E1D65329C165BB4FDC191E29DBB6E /* RTIconButton */;
+			targetProxy = 2D095904C9B0C43CDA25A18DB5ABA65F /* PBXContainerItemProxy */;
+		};
+		E69768F3A890E3CE5D73737B90991B7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RTIconButton;
+			target = C27E1D65329C165BB4FDC191E29DBB6E /* RTIconButton */;
+			targetProxy = E402D4BBAC1C4508E0B087B0B2D642FE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -491,35 +493,6 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
-		};
-		0A0F7AB31EF66A9F0604133602EC19DC /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 949872D95396E8B399D96AB8C6DB2781 /* Pods-RTIconButton_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RTIconButton_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RTIconButton_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		0B57334D6C23DADAA4F7D802A5760EB2 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -560,104 +533,9 @@
 			};
 			name = Debug;
 		};
-		30B0153144AD96CB15712608C2414B27 /* Release */ = {
+		1254C9A587ECECD85FE913AE5BC0C42D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C544CA13B07F87E5CC37E8F4E1F654B /* RTIconButton-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RTIconButton/RTIconButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RTIconButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RTIconButton/RTIconButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RTIconButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5AE611DB30D23147CC209B50F249409B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CF366E909862115B1C58D44A9A8878D1 /* Pods-RTIconButton_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RTIconButton_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RTIconButton_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		62E42FBD39C16C131466DCD99A05B70A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C544CA13B07F87E5CC37E8F4E1F654B /* RTIconButton-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 0.1.0;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 0.1.0;
-				DYLIB_CURRENT_VERSION = "$(CURRENT_PROJECT_VERSION)";
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/RTIconButton/RTIconButton-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/RTIconButton/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/RTIconButton/RTIconButton.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RTIconButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		6C1DCED1B15ED157904A89DB1E8263F6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C544CA13B07F87E5CC37E8F4E1F654B /* RTIconButton-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = RTIconButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
-		78D1C7480F5D650A1932CDE9A7F3A1CB /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7F386D4B78A73E2E5B15CE63A6CD146 /* Pods-RTIconButton_Tests.release.xcconfig */;
+			baseConfigurationReference = 5855B3B0822CE0D37B7EFBFB53C67175 /* Pods-RTIconButton_Tests.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -670,6 +548,37 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RTIconButton_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		132AAA07B340904E14AED09E9E6935C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D1B48B98B6470622BB7298DC8D6B3BC7 /* Pods-RTIconButton_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RTIconButton_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
@@ -684,21 +593,9 @@
 			};
 			name = Release;
 		};
-		A4447E4ADE0D910179CBD7BF8AC04DF8 /* Debug */ = {
+		341E3CE2AEDF534BE48E05DAE639D62B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6C544CA13B07F87E5CC37E8F4E1F654B /* RTIconButton-Private.xcconfig */;
-			buildSettings = {
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = RTIconButton;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		EE4A27FEB23AF4E77CB50E7EA66A34C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = BE43F880ACDE8D28094F597D43B71697 /* Pods-RTIconButton_Example.debug.xcconfig */;
+			baseConfigurationReference = 0953BC7FAF1EF23472507B6955C67AEC /* Pods-RTIconButton_Example.debug.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -711,6 +608,7 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
 				OTHER_LDFLAGS = "";
@@ -725,23 +623,122 @@
 			};
 			name = Debug;
 		};
+		58D79DADDEB307C80994A62F8DA4A51B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D39158C8E2D30F542934387C92DA809A /* Pods-RTIconButton_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RTIconButton_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_RTIconButton_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6642F03F4B9A2DAADF1482F979658B3B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4A5FD48234C0D7CCD38DEC09043220 /* RTIconButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RTIconButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		8C5C39DFD04BC2C2E4FD910E9D691F36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4A5FD48234C0D7CCD38DEC09043220 /* RTIconButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RTIconButton/RTIconButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RTIconButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RTIconButton/RTIconButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RTIconButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		92449A8682294F71C968A9473336C50D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4A5FD48234C0D7CCD38DEC09043220 /* RTIconButton.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RTIconButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		C5EC8DBC2480D6A1BAA82112ECD3DB8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC4A5FD48234C0D7CCD38DEC09043220 /* RTIconButton.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RTIconButton/RTIconButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RTIconButton/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RTIconButton/RTIconButton.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RTIconButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		06747E419C41A91D8CC2BB157348EE20 /* Build configuration list for PBXNativeTarget "RTIconButton-RTIconButton" */ = {
+		2D197AC1DDC1C04757AE9A176EC4730E /* Build configuration list for PBXNativeTarget "RTIconButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4447E4ADE0D910179CBD7BF8AC04DF8 /* Debug */,
-				6C1DCED1B15ED157904A89DB1E8263F6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		17FA35BD552C87B99F57AF4A5E4FCC9F /* Build configuration list for PBXNativeTarget "Pods-RTIconButton_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				EE4A27FEB23AF4E77CB50E7EA66A34C6 /* Debug */,
-				5AE611DB30D23147CC209B50F249409B /* Release */,
+				C5EC8DBC2480D6A1BAA82112ECD3DB8F /* Debug */,
+				8C5C39DFD04BC2C2E4FD910E9D691F36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -755,20 +752,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A918A08D1D0B6C257A9C9517EB241FF2 /* Build configuration list for PBXNativeTarget "Pods-RTIconButton_Tests" */ = {
+		6CC2546FCAB19523DD00F957092B87F3 /* Build configuration list for PBXNativeTarget "Pods-RTIconButton_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0A0F7AB31EF66A9F0604133602EC19DC /* Debug */,
-				78D1C7480F5D650A1932CDE9A7F3A1CB /* Release */,
+				1254C9A587ECECD85FE913AE5BC0C42D /* Debug */,
+				132AAA07B340904E14AED09E9E6935C4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CCFF675CC2C5343B70618070B5635A0B /* Build configuration list for PBXNativeTarget "RTIconButton" */ = {
+		987D63577E8D958AE648785CA12282C4 /* Build configuration list for PBXNativeTarget "RTIconButton-RTIconButton" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62E42FBD39C16C131466DCD99A05B70A /* Debug */,
-				30B0153144AD96CB15712608C2414B27 /* Release */,
+				92449A8682294F71C968A9473336C50D /* Debug */,
+				6642F03F4B9A2DAADF1482F979658B3B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F95749C8B4E0F5F30297B61965B48EF5 /* Build configuration list for PBXNativeTarget "Pods-RTIconButton_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				341E3CE2AEDF534BE48E05DAE639D62B /* Debug */,
+				58D79DADDEB307C80994A62F8DA4A51B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

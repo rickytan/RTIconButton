@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-RTIconButton_Example.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-RTIconButton_Tests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RTIconButton-RTIconButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>RTIconButton.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>21B3746E3F0F38394B286B91D388C345</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>30963B4A68BD483C74261124885CD847</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9B235F575A55371FC5B9C0585BF19DBA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C27E1D65329C165BB4FDC191E29DBB6E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

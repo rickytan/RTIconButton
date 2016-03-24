@@ -1,10 +1,24 @@
+// RTIconButton.m
 //
-//  GSIconButton.m
-//  Storitaire
+// Copyright (c) 2016 Ricky Tan
 //
-//  Created by ricky on 15/9/12.
-//  Copyright (c) 2015年 杭州引晴网络科技. All rights reserved.
+// Permission is hereby granted, free of charge, to any person obtaining a copy
+// of this software and associated documentation files (the "Software"), to deal
+// in the Software without restriction, including without limitation the rights
+// to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+// copies of the Software, and to permit persons to whom the Software is
+// furnished to do so, subject to the following conditions:
 //
+// The above copyright notice and this permission notice shall be included in
+// all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+// IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+// FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+// AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+// LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+// THE SOFTWARE.
 
 #import "RTIconButton.h"
 
@@ -33,6 +47,14 @@
     return self;
 }
 
+- (CGSize)iconSize
+{
+    if (CGSizeEqualToSize(_iconSize, CGSizeZero)) {
+        _iconSize = [super imageRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
+    }
+    return _iconSize;
+}
+
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
 
@@ -41,17 +63,17 @@
     CGSize size = [[self titleForState:self.state] sizeWithFont:self.font
                                               constrainedToSize:contentRect.size];
 #pragma clang diagnostic pop
-    CGSize iconSize = CGSizeEqualToSize(self.iconSize, CGSizeZero) ? [super imageRectForContentRect:contentRect].size : self.iconSize;
+    CGSize iconSize = self.iconSize;
     CGFloat totalWidth = size.width + iconSize.width + self.iconMargin;
     CGFloat totalHeight = size.height + iconSize.height + self.iconMargin;
     CGRect rect = {{0, 0}, size};
     switch (self.contentHorizontalAlignment) {
         case UIControlContentHorizontalAlignmentLeft:
             switch (_iconPosition) {
-                case GSIconPositionRight:
+                case RTIconPositionRight:
                     rect.origin.x = CGRectGetMinX(contentRect);
                     break;
-                case GSIconPositionLeft:
+                case RTIconPositionLeft:
                     rect.origin.x = CGRectGetMinX(contentRect) + totalWidth - size.width;
                     break;
                 default:
@@ -61,10 +83,10 @@
             break;
         case UIControlContentHorizontalAlignmentRight:
             switch (_iconPosition) {
-                case GSIconPositionRight:
+                case RTIconPositionRight:
                     rect.origin.x = CGRectGetMaxX(contentRect) - totalWidth;
                     break;
-                case GSIconPositionLeft:
+                case RTIconPositionLeft:
                     rect.origin.x = CGRectGetMaxX(contentRect) - size.width;
                     break;
                 default:
@@ -74,10 +96,10 @@
             break;
         case UIControlContentHorizontalAlignmentFill:
             switch (_iconPosition) {
-                case GSIconPositionRight:
+                case RTIconPositionRight:
                     rect.origin.x = CGRectGetMinX(contentRect);
                     break;
-                case GSIconPositionLeft:
+                case RTIconPositionLeft:
                     rect.origin.x = CGRectGetMaxX(contentRect) - size.width;
                     break;
                 default:
@@ -87,10 +109,10 @@
             break;
         default:
             switch (_iconPosition) {
-                case GSIconPositionRight:
+                case RTIconPositionRight:
                     rect.origin.x = CGRectGetMinX(contentRect) + (CGRectGetWidth(contentRect) - totalWidth) / 2;
                     break;
-                case GSIconPositionLeft:
+                case RTIconPositionLeft:
                     rect.origin.x = CGRectGetMinX(contentRect) + CGRectGetWidth(contentRect) - (CGRectGetWidth(contentRect) - totalWidth) / 2 - size.width;
                     break;
                 default:
@@ -103,10 +125,10 @@
     switch (self.contentVerticalAlignment) {
         case UIControlContentVerticalAlignmentTop:
             switch (_iconPosition) {
-                case GSIconPositionTop:
+                case RTIconPositionTop:
                     rect.origin.y = CGRectGetMinY(contentRect) + totalHeight - size.height;
                     break;
-                case GSIconPositionBottom:
+                case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMinY(contentRect);
                     break;
                 default:
@@ -116,10 +138,10 @@
             break;
         case UIControlContentVerticalAlignmentBottom:
             switch (_iconPosition) {
-                case GSIconPositionTop:
+                case RTIconPositionTop:
                     rect.origin.y = CGRectGetMaxY(contentRect) - size.height;
                     break;
-                case GSIconPositionBottom:
+                case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMaxY(contentRect) - totalHeight;
                     break;
                 default:
@@ -129,10 +151,10 @@
             break;
         case UIControlContentVerticalAlignmentFill:
             switch (_iconPosition) {
-                case GSIconPositionTop:
+                case RTIconPositionTop:
                     rect.origin.y = CGRectGetMaxY(contentRect) - size.height;
                     break;
-                case GSIconPositionBottom:
+                case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMinY(contentRect);
                     break;
                 default:
@@ -142,10 +164,10 @@
             break;
         default:
             switch (_iconPosition) {
-                case GSIconPositionTop:
+                case RTIconPositionTop:
                     rect.origin.y = CGRectGetMaxY(contentRect) - (CGRectGetHeight(contentRect) - totalHeight) / 2 - size.height;
                     break;
-                case GSIconPositionBottom:
+                case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMinY(contentRect) + (CGRectGetHeight(contentRect) - totalHeight) / 2;
                     break;
                 default:
@@ -159,12 +181,12 @@
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
-    CGSize size = CGSizeEqualToSize(self.iconSize, CGSizeZero) ? [super imageRectForContentRect:contentRect].size : self.iconSize;
+    CGSize size = self.iconSize;
     CGSize titleSize = [self titleRectForContentRect:contentRect].size;
 
     switch (_iconPosition) {
-        case GSIconPositionTop:
-        case GSIconPositionBottom:
+        case RTIconPositionTop:
+        case RTIconPositionBottom:
             size.height = MAX(MIN(CGRectGetHeight(contentRect) - self.iconMargin - titleSize.height, size.height), self.iconSize.height);
             break;
         default:
@@ -178,10 +200,10 @@
     switch (self.contentHorizontalAlignment) {
         case UIControlContentHorizontalAlignmentLeft:
             switch (_iconPosition) {
-                case GSIconPositionRight:
+                case RTIconPositionRight:
                     rect.origin.x = CGRectGetMinX(contentRect) + totalWidth - size.width;
                     break;
-                case GSIconPositionLeft:
+                case RTIconPositionLeft:
                     rect.origin.x = CGRectGetMinX(contentRect);
                     break;
                 default:
@@ -191,10 +213,10 @@
             break;
         case UIControlContentHorizontalAlignmentRight:
             switch (_iconPosition) {
-                case GSIconPositionRight:
+                case RTIconPositionRight:
                     rect.origin.x = CGRectGetMaxX(contentRect) - size.width;
                     break;
-                case GSIconPositionLeft:
+                case RTIconPositionLeft:
                     rect.origin.x = CGRectGetMaxX(contentRect) - totalWidth;
                     break;
                 default:
@@ -204,10 +226,10 @@
             break;
         case UIControlContentHorizontalAlignmentFill:
             switch (_iconPosition) {
-                case GSIconPositionRight:
+                case RTIconPositionRight:
                     rect.origin.x = CGRectGetMaxX(contentRect) - size.width;
                     break;
-                case GSIconPositionLeft:
+                case RTIconPositionLeft:
                     rect.origin.x = CGRectGetMinX(contentRect);
                     break;
                 default:
@@ -217,10 +239,10 @@
             break;
         default:
             switch (_iconPosition) {
-                case GSIconPositionRight:
+                case RTIconPositionRight:
                     rect.origin.x = CGRectGetMinX(contentRect) + CGRectGetWidth(contentRect) - (CGRectGetWidth(contentRect) - totalWidth) / 2 - size.width;
                     break;
-                case GSIconPositionLeft:
+                case RTIconPositionLeft:
                     rect.origin.x = CGRectGetMinX(contentRect) + (CGRectGetWidth(contentRect) - totalWidth) / 2;
                     break;
                 default:
@@ -233,10 +255,10 @@
     switch (self.contentVerticalAlignment) {
         case UIControlContentVerticalAlignmentTop:
             switch (_iconPosition) {
-                case GSIconPositionTop:
+                case RTIconPositionTop:
                     rect.origin.y = CGRectGetMinY(contentRect);
                     break;
-                case GSIconPositionBottom:
+                case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMinY(contentRect) + totalHeight - size.height;
                     break;
                 default:
@@ -246,10 +268,10 @@
             break;
         case UIControlContentVerticalAlignmentBottom:
             switch (_iconPosition) {
-                case GSIconPositionTop:
+                case RTIconPositionTop:
                     rect.origin.y = CGRectGetMaxY(contentRect) - totalHeight;
                     break;
-                case GSIconPositionBottom:
+                case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMaxY(contentRect) - size.height;
                     break;
                 default:
@@ -259,10 +281,10 @@
             break;
         case UIControlContentVerticalAlignmentFill:
             switch (_iconPosition) {
-                case GSIconPositionTop:
+                case RTIconPositionTop:
                     rect.origin.y = CGRectGetMinY(contentRect);
                     break;
-                case GSIconPositionBottom:
+                case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMaxY(contentRect) - size.height;
                     break;
                 default:
@@ -272,10 +294,10 @@
             break;
         default:
             switch (_iconPosition) {
-                case GSIconPositionTop:
+                case RTIconPositionTop:
                     rect.origin.y = CGRectGetMinY(contentRect) + (CGRectGetHeight(contentRect) - totalHeight) / 2;
                     break;
-                case GSIconPositionBottom:
+                case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMaxY(contentRect) - (CGRectGetHeight(contentRect) - totalHeight) / 2 - size.height;
                     break;
                 default:
@@ -290,21 +312,23 @@
 
 - (CGSize)intrinsicContentSize
 {
-    CGRect contentRect = [self contentRectForBounds:self.bounds];
+    UIEdgeInsets contentInsets = self.contentEdgeInsets;
 #pragma clang diagnostic push
 #pragma clang diagnostic ignored "-Wdeprecated"
     CGSize titleSize = [[self titleForState:self.state] sizeWithFont:self.font];
 #pragma clang diagnostic pop
-    CGSize imageSize = CGSizeEqualToSize(self.iconSize, CGSizeZero) ? [super imageRectForContentRect:contentRect].size : self.iconSize;
+    CGSize imageSize = self.iconSize;
 
     switch (_iconPosition) {
-        case GSIconPositionTop:
-        case GSIconPositionBottom:
-            return CGSizeMake(MAX(titleSize.width, imageSize.width), titleSize.height + imageSize.height + self.iconMargin);
+        case RTIconPositionTop:
+        case RTIconPositionBottom:
+            return CGSizeMake(MAX(titleSize.width, imageSize.width) + contentInsets.left + contentInsets.right,
+                              titleSize.height + imageSize.height + self.iconMargin + contentInsets.top + contentInsets.bottom);
 
             break;
         default:
-            return CGSizeMake(titleSize.width + imageSize.width + self.iconMargin, MAX(titleSize.height, imageSize.height));
+            return CGSizeMake(titleSize.width + imageSize.width + self.iconMargin + contentInsets.left + contentInsets.right,
+                              MAX(titleSize.height, imageSize.height) + contentInsets.top + contentInsets.bottom);
             break;
     }
 }

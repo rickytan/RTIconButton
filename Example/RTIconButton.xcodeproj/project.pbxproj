@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26E6FE4118B552DE08715D4B /* Pods_RTIconButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E923E51AF2CDA0737451936B /* Pods_RTIconButton_Example.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		26E6FE4118B552DE08715D4B /* Pods_RTIconButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E923E51AF2CDA0737451936B /* Pods_RTIconButton_Example.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -21,8 +21,9 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
+		6D9E0FA01CA3840500185793 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E0F9F1CA3840500185793 /* LaunchScreen.xib */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8E753DBDD37BBD7AC9E0072F /* Pods_RTIconButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1292BE4F2976AEFA0B9401C7 /* Pods_RTIconButton_Tests.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		8E753DBDD37BBD7AC9E0072F /* Pods_RTIconButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1292BE4F2976AEFA0B9401C7 /* Pods_RTIconButton_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +41,7 @@
 		2BD727A36BA13559CD886DC6 /* Pods-RTIconButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		55E18128C9D710633E3EEE74 /* Pods-RTIconButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		578620290D6C674AC6B0089F /* RTIconButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RTIconButton.podspec; path = ../RTIconButton.podspec; sourceTree = "<group>"; };
-		6003F58A195388D20070C39A /* RTIconButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = RTIconButton.app; path = RTIconButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F58A195388D20070C39A /* RTIconButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTIconButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -53,12 +54,13 @@
 		6003F5A5195388D20070C39A /* RTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RTViewController.h; sourceTree = "<group>"; };
 		6003F5A6195388D20070C39A /* RTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RTViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = Tests.xctest; path = RTIconButton_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6003F5AE195388D20070C39A /* RTIconButton_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTIconButton_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6D9E0F9F1CA3840500185793 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9356061BF7A29475C2F16F13 /* Pods-RTIconButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.release.xcconfig"; sourceTree = "<group>"; };
 		CBA236976FF6A5D5AD6E0E4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
@@ -108,8 +110,8 @@
 		6003F58B195388D20070C39A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6003F58A195388D20070C39A /* RTIconButton.app */,
-				6003F5AE195388D20070C39A /* Tests.xctest */,
+				6003F58A195388D20070C39A /* RTIconButton_Example.app */,
+				6003F5AE195388D20070C39A /* RTIconButton_Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -130,12 +132,13 @@
 		6003F593195388D20070C39A /* Example for RTIconButton */ = {
 			isa = PBXGroup;
 			children = (
+				6003F5A8195388D20070C39A /* Images.xcassets */,
+				6D9E0F9F1CA3840500185793 /* LaunchScreen.xib */,
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* RTAppDelegate.h */,
 				6003F59D195388D20070C39A /* RTAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* RTViewController.h */,
 				6003F5A6195388D20070C39A /* RTViewController.m */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
 			name = "Example for RTIconButton";
@@ -213,7 +216,7 @@
 			);
 			name = RTIconButton_Example;
 			productName = RTIconButton;
-			productReference = 6003F58A195388D20070C39A /* RTIconButton.app */;
+			productReference = 6003F58A195388D20070C39A /* RTIconButton_Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 		6003F5AD195388D20070C39A /* RTIconButton_Tests */ = {
@@ -234,7 +237,7 @@
 			);
 			name = RTIconButton_Tests;
 			productName = RTIconButtonTests;
-			productReference = 6003F5AE195388D20070C39A /* Tests.xctest */;
+			productReference = 6003F5AE195388D20070C39A /* RTIconButton_Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -276,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6D9E0FA01CA3840500185793 /* LaunchScreen.xib in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -511,7 +515,6 @@
 			baseConfigurationReference = 55E18128C9D710633E3EEE74 /* Pods-RTIconButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RTIconButton/RTIconButton-Prefix.pch";
 				INFOPLIST_FILE = "RTIconButton/RTIconButton-Info.plist";
@@ -526,7 +529,6 @@
 			baseConfigurationReference = 9356061BF7A29475C2F16F13 /* Pods-RTIconButton_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RTIconButton/RTIconButton-Prefix.pch";
 				INFOPLIST_FILE = "RTIconButton/RTIconButton-Info.plist";
