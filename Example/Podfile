@@ -1,12 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 use_frameworks!
 
-target 'RTIconButton_Example', :exclusive => true do
+target 'RTIconButton_Example' do
   pod "RTIconButton", :path => "../"
 end
 
-target 'RTIconButton_Tests', :exclusive => true do
+target 'RTIconButton_Tests' do
   pod "RTIconButton", :path => "../"
-
-  
 end
