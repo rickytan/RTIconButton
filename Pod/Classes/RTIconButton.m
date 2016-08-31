@@ -52,33 +52,48 @@
     if (CGSizeEqualToSize(_iconSize, CGSizeZero)) {
         return [super imageRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
     }
-    if ([self imageForState:self.state])
+    if (self.currentImage)
         return _iconSize;
     return CGSizeZero;
+}
+
+- (CGSize)titleSize
+{
+    CGSize size = CGSizeZero;
+    if (self.currentAttributedTitle) {
+        size = [self.currentAttributedTitle size];
+    }
+    else if (self.currentTitle) {
+        size = [self.currentTitle sizeWithAttributes:@{NSFontAttributeName: self.titleLabel.font}];
+    }
+    return size;
 }
 
 - (void)setEnabled:(BOOL)enabled
 {
     super.enabled = enabled;
     [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
 }
 
 - (void)setSelected:(BOOL)selected
 {
     super.selected = selected;
     [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
 }
 
 - (void)setHighlighted:(BOOL)highlighted
 {
     super.highlighted = highlighted;
     [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
     CGSize size = [super titleRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
-
+    
     CGSize iconSize = self.iconSize;
     CGFloat margin = self.iconMargin;
     if (CGSizeEqualToSize(iconSize, CGSizeZero)) {
@@ -141,7 +156,7 @@
             }
             break;
     }
-
+    
     switch (self.contentVerticalAlignment) {
         case UIControlContentVerticalAlignmentTop:
             switch (_iconPosition) {
@@ -202,22 +217,22 @@
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
     CGSize size = self.iconSize;
-    CGSize titleSize = [super titleRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
+    CGSize titleSize = [self titleSize];
     CGFloat margin = self.iconMargin;
     if (CGSizeEqualToSize(titleSize, CGSizeZero)) {
         margin = 0;
     }
-
+    
     switch (_iconPosition) {
         case RTIconPositionTop:
         case RTIconPositionBottom:
-            size.height = MAX(MIN(CGRectGetHeight(contentRect) - self.iconMargin - titleSize.height, size.height), self.iconSize.height);
+            size.height = MAX(MIN(CGRectGetHeight(contentRect) - margin - titleSize.height, size.height), size.height);
             break;
         default:
-            size.width = MAX(MIN(CGRectGetWidth(contentRect) - self.iconMargin - titleSize.width, size.width), self.iconSize.width);
+            size.width = MAX(MIN(CGRectGetWidth(contentRect) - margin - titleSize.width, size.width), size.width);
             break;
     }
-
+    
     CGFloat totalWidth = size.width + titleSize.width + margin;
     CGFloat totalHeight = size.height + titleSize.height + margin;
     CGRect rect = {{0, 0}, size};
@@ -275,7 +290,7 @@
             }
             break;
     }
-
+    
     switch (self.contentVerticalAlignment) {
         case UIControlContentVerticalAlignmentTop:
             switch (_iconPosition) {
@@ -330,15 +345,15 @@
             }
             break;
     }
-
+    
     return rect;
 }
 
 - (CGSize)intrinsicContentSize
 {
     UIEdgeInsets contentInsets = self.contentEdgeInsets;
-
-    CGSize titleSize = [super titleRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
+    
+    CGSize titleSize = [self titleSize];
     CGSize imageSize = self.iconSize;
     CGFloat margin = self.iconMargin;
     if (CGSizeEqualToSize(imageSize, CGSizeZero) || CGSizeEqualToSize(titleSize, CGSizeZero)) {
@@ -349,7 +364,7 @@
         case RTIconPositionBottom:
             return CGSizeMake(MAX(titleSize.width, imageSize.width) + contentInsets.left + contentInsets.right,
                               titleSize.height + imageSize.height + margin + contentInsets.top + contentInsets.bottom);
-
+            
             break;
         default:
             return CGSizeMake(titleSize.width + imageSize.width + margin + contentInsets.left + contentInsets.right,
