@@ -50,22 +50,42 @@
 - (CGSize)iconSize
 {
     if (CGSizeEqualToSize(_iconSize, CGSizeZero)) {
-        _iconSize = [super imageRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
+        return [super imageRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
     }
-    return _iconSize;
+    if ([self imageForState:self.state])
+        return _iconSize;
+    return CGSizeZero;
+}
+
+- (void)setEnabled:(BOOL)enabled
+{
+    super.enabled = enabled;
+    [self invalidateIntrinsicContentSize];
+}
+
+- (void)setSelected:(BOOL)selected
+{
+    super.selected = selected;
+    [self invalidateIntrinsicContentSize];
+}
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+    super.highlighted = highlighted;
+    [self invalidateIntrinsicContentSize];
 }
 
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
+    CGSize size = [super titleRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
 
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated"
-    CGSize size = [[self titleForState:self.state] sizeWithFont:self.font
-                                              constrainedToSize:contentRect.size];
-#pragma clang diagnostic pop
     CGSize iconSize = self.iconSize;
-    CGFloat totalWidth = size.width + iconSize.width + self.iconMargin;
-    CGFloat totalHeight = size.height + iconSize.height + self.iconMargin;
+    CGFloat margin = self.iconMargin;
+    if (CGSizeEqualToSize(iconSize, CGSizeZero)) {
+        margin = 0;
+    }
+    CGFloat totalWidth = size.width + iconSize.width + margin;
+    CGFloat totalHeight = size.height + iconSize.height + margin;
     CGRect rect = {{0, 0}, size};
     switch (self.contentHorizontalAlignment) {
         case UIControlContentHorizontalAlignmentLeft:
@@ -182,7 +202,11 @@
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
     CGSize size = self.iconSize;
-    CGSize titleSize = [self titleRectForContentRect:contentRect].size;
+    CGSize titleSize = [super titleRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
+    CGFloat margin = self.iconMargin;
+    if (CGSizeEqualToSize(titleSize, CGSizeZero)) {
+        margin = 0;
+    }
 
     switch (_iconPosition) {
         case RTIconPositionTop:
@@ -194,8 +218,8 @@
             break;
     }
 
-    CGFloat totalWidth = size.width + titleSize.width + self.iconMargin;
-    CGFloat totalHeight = size.height + titleSize.height + self.iconMargin;
+    CGFloat totalWidth = size.width + titleSize.width + margin;
+    CGFloat totalHeight = size.height + titleSize.height + margin;
     CGRect rect = {{0, 0}, size};
     switch (self.contentHorizontalAlignment) {
         case UIControlContentHorizontalAlignmentLeft:
@@ -313,21 +337,22 @@
 - (CGSize)intrinsicContentSize
 {
     UIEdgeInsets contentInsets = self.contentEdgeInsets;
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated"
-    CGSize titleSize = [[self titleForState:self.state] sizeWithFont:self.font];
-#pragma clang diagnostic pop
-    CGSize imageSize = self.iconSize;
 
+    CGSize titleSize = [super titleRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
+    CGSize imageSize = self.iconSize;
+    CGFloat margin = self.iconMargin;
+    if (CGSizeEqualToSize(imageSize, CGSizeZero) || CGSizeEqualToSize(titleSize, CGSizeZero)) {
+        margin = 0;
+    }
     switch (_iconPosition) {
         case RTIconPositionTop:
         case RTIconPositionBottom:
             return CGSizeMake(MAX(titleSize.width, imageSize.width) + contentInsets.left + contentInsets.right,
-                              titleSize.height + imageSize.height + self.iconMargin + contentInsets.top + contentInsets.bottom);
+                              titleSize.height + imageSize.height + margin + contentInsets.top + contentInsets.bottom);
 
             break;
         default:
-            return CGSizeMake(titleSize.width + imageSize.width + self.iconMargin + contentInsets.left + contentInsets.right,
+            return CGSizeMake(titleSize.width + imageSize.width + margin + contentInsets.left + contentInsets.right,
                               MAX(titleSize.height, imageSize.height) + contentInsets.top + contentInsets.bottom);
             break;
     }

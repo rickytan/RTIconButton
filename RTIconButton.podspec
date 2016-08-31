@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RTIconButton"
-  s.version          = "1.0.1"
+  s.version          = "1.1.0"
   s.summary          = "A Interface Builder configurable UIButton with a image icon"
   s.description      = <<-DESC
 This is a drop-in replacement for UIButton, which support convenient configuration for image icon's position
@@ -19,9 +19,6 @@ NOTE: to support IB, you must set use_frameworks! in your Podfile.
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  # s.resource_bundles = {
-  #   'RTIconButton' => ['Pod/Assets/*.png']
-  # }
 
   s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit'

@@ -22,12 +22,6 @@
 
 #import <UIKit/UIKit.h>
 
-typedef NS_ENUM(NSInteger, GSIconPosition) {
-    GSIconPositionTop       = 0,
-    GSIconPositionLeft,
-    GSIconPositionBottom,
-    GSIconPositionRight
-} DEPRECATED_MSG_ATTRIBUTE("Use RTIconPosition instead");
 
 typedef NS_ENUM(NSInteger, RTIconPosition) {
     RTIconPositionTop       = 0,
