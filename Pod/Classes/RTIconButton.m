@@ -27,6 +27,7 @@
 - (void)commonInit
 {
     self.iconSize = CGSizeZero;
+    self.autoresizesSubviews = NO;
 }
 
 - (instancetype)initWithCoder:(NSCoder *)aDecoder
@@ -349,6 +350,15 @@
     return rect;
 }
 
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    
+    CGRect contentRect = [self contentRectForBounds:self.bounds];
+    self.titleLabel.frame = [self titleRectForContentRect:contentRect];
+    self.imageView.frame = [self imageRectForContentRect:contentRect];
+}
+
 - (CGSize)intrinsicContentSize
 {
     UIEdgeInsets contentInsets = self.contentEdgeInsets;
@@ -359,18 +369,20 @@
     if (CGSizeEqualToSize(imageSize, CGSizeZero) || CGSizeEqualToSize(titleSize, CGSizeZero)) {
         margin = 0;
     }
+    CGSize size = {0, 0};
     switch (_iconPosition) {
         case RTIconPositionTop:
         case RTIconPositionBottom:
-            return CGSizeMake(MAX(titleSize.width, imageSize.width) + contentInsets.left + contentInsets.right,
+            size = CGSizeMake(MAX(titleSize.width, imageSize.width) + contentInsets.left + contentInsets.right,
                               titleSize.height + imageSize.height + margin + contentInsets.top + contentInsets.bottom);
             
             break;
         default:
-            return CGSizeMake(titleSize.width + imageSize.width + margin + contentInsets.left + contentInsets.right,
+            size = CGSizeMake(titleSize.width + imageSize.width + margin + contentInsets.left + contentInsets.right,
                               MAX(titleSize.height, imageSize.height) + contentInsets.top + contentInsets.bottom);
             break;
     }
+    return CGRectIntegral((CGRect){{0, 0}, size}).size;
 }
 
 - (CGSize)sizeThatFits:(CGSize)size
