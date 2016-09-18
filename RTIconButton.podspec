@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RTIconButton"
-  s.version          = "1.1.1"
+  s.version          = "1.1.2"
   s.summary          = "A Interface Builder configurable UIButton with a image icon"
   s.description      = <<-DESC
 This is a drop-in replacement for UIButton, which support convenient configuration for image icon's position

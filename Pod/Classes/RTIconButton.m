@@ -211,7 +211,7 @@
             }
             break;
     }
-    return rect;
+    return CGRectIntegral(rect);
 }
 
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
