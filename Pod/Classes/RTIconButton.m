@@ -350,15 +350,6 @@
     return rect;
 }
 
-- (void)layoutSubviews
-{
-    [super layoutSubviews];
-    
-    CGRect contentRect = [self contentRectForBounds:self.bounds];
-    self.titleLabel.frame = [self titleRectForContentRect:contentRect];
-    self.imageView.frame = [self imageRectForContentRect:contentRect];
-}
-
 - (CGSize)intrinsicContentSize
 {
     UIEdgeInsets contentInsets = self.contentEdgeInsets;
