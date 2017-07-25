@@ -24,6 +24,7 @@
 		6D9E0FA01CA3840500185793 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E0F9F1CA3840500185793 /* LaunchScreen.xib */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		8E753DBDD37BBD7AC9E0072F /* Pods_RTIconButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1292BE4F2976AEFA0B9401C7 /* Pods_RTIconButton_Tests.framework */; };
+		9C93D26B1F26DBAF0056F456 /* RTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C93D26A1F26DBAF0056F456 /* RTTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		6D9E0F9F1CA3840500185793 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		9356061BF7A29475C2F16F13 /* Pods-RTIconButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9C93D2691F26DBAF0056F456 /* RTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTableViewController.h; sourceTree = "<group>"; };
+		9C93D26A1F26DBAF0056F456 /* RTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTableViewController.m; sourceTree = "<group>"; };
 		CBA236976FF6A5D5AD6E0E4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E923E51AF2CDA0737451936B /* Pods_RTIconButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01292E35E7CE24348853D28 /* Pods-RTIconButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -137,6 +140,8 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F59C195388D20070C39A /* RTAppDelegate.h */,
 				6003F59D195388D20070C39A /* RTAppDelegate.m */,
+				9C93D2691F26DBAF0056F456 /* RTTableViewController.h */,
+				9C93D26A1F26DBAF0056F456 /* RTTableViewController.m */,
 				6003F5A5195388D20070C39A /* RTViewController.h */,
 				6003F5A6195388D20070C39A /* RTViewController.m */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -397,6 +402,7 @@
 				6003F59E195388D20070C39A /* RTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RTViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				9C93D26B1F26DBAF0056F456 /* RTTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
