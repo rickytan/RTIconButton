@@ -22,11 +22,31 @@
 
 #import "RTIconButton.h"
 
+static inline NSString * NSStringFromIconPosition(RTIconPosition position) {
+    switch (position) {
+        case RTIconPositionTop:
+            return @"Top";
+            break;
+        case RTIconPositionLeft:
+            return @"Left";
+            break;
+        case RTIconPositionRight:
+            return @"Right";
+            break;
+        case RTIconPositionBottom:
+            return @"Bottom";
+            break;
+        default:
+            break;
+    }
+    return @"Unknown";
+}
+
 @implementation RTIconButton
+@synthesize iconSize = _iconSize;
 
 - (void)commonInit
 {
-    self.iconSize = CGSizeZero;
     self.autoresizesSubviews = NO;
 }
 
@@ -70,30 +90,15 @@
     return size;
 }
 
-- (void)setEnabled:(BOOL)enabled
-{
-    super.enabled = enabled;
-    [self invalidateIntrinsicContentSize];
-    [self setNeedsLayout];
-}
-
-- (void)setSelected:(BOOL)selected
-{
-    super.selected = selected;
-    [self invalidateIntrinsicContentSize];
-    [self setNeedsLayout];
-}
-
-- (void)setHighlighted:(BOOL)highlighted
-{
-    super.highlighted = highlighted;
-    [self invalidateIntrinsicContentSize];
-    [self setNeedsLayout];
-}
-
 - (CGRect)titleRectForContentRect:(CGRect)contentRect
 {
     CGSize size = [super titleRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
+    if (self.contentVerticalAlignment == UIControlContentVerticalAlignmentFill) {
+        size.height = MIN(size.height, CGRectGetHeight(contentRect));
+    }
+    if (self.contentHorizontalAlignment == UIControlContentHorizontalAlignmentFill) {
+        size.width = MIN(size.width, CGRectGetWidth(contentRect));
+    };
     
     CGSize iconSize = self.iconSize;
     CGFloat margin = self.iconMargin;
@@ -218,6 +223,13 @@
 - (CGRect)imageRectForContentRect:(CGRect)contentRect
 {
     CGSize size = self.iconSize;
+    if (self.contentVerticalAlignment == UIControlContentVerticalAlignmentFill) {
+        size.height = MIN(size.height, CGRectGetHeight(contentRect));
+    }
+    if (self.contentHorizontalAlignment == UIControlContentHorizontalAlignmentFill) {
+        size.width = MIN(size.width, CGRectGetWidth(contentRect));
+    };
+    
     CGSize titleSize = [self titleSize];
     CGFloat margin = self.iconMargin;
     if (CGSizeEqualToSize(titleSize, CGSizeZero)) {
@@ -350,6 +362,96 @@
     return rect;
 }
 
+- (void)setIconSize:(CGSize)iconSize
+{
+    if (!CGSizeEqualToSize(_iconSize, iconSize)) {
+        _iconSize = iconSize;
+        [self invalidateIntrinsicContentSize];
+        [self setNeedsLayout];
+    }
+}
+
+- (void)setIconMargin:(CGFloat)iconMargin
+{
+    if (_iconMargin != iconMargin) {
+        _iconMargin = iconMargin;
+        [self invalidateIntrinsicContentSize];
+        [self setNeedsLayout];
+    }
+}
+
+- (void)setIconPosition:(NSInteger)iconPosition
+{
+    if (_iconPosition != iconPosition) {
+        _iconPosition = iconPosition;
+        [self invalidateIntrinsicContentSize];
+        [self setNeedsLayout];
+    }
+}
+
+- (void)setEnabled:(BOOL)enabled
+{
+    super.enabled = enabled;
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
+- (void)setSelected:(BOOL)selected
+{
+    super.selected = selected;
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
+- (void)setHighlighted:(BOOL)highlighted
+{
+    super.highlighted = highlighted;
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
+- (void)setContentVerticalAlignment:(UIControlContentVerticalAlignment)contentVerticalAlignment
+{
+    super.contentVerticalAlignment = contentVerticalAlignment;
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
+- (void)setContentHorizontalAlignment:(UIControlContentHorizontalAlignment)contentHorizontalAlignment
+{
+    super.contentHorizontalAlignment = contentHorizontalAlignment;
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
+- (void)setTitle:(NSString *)title forState:(UIControlState)state
+{
+    [super setTitle:title forState:state];
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
+- (void)setAttributedTitle:(NSAttributedString *)title forState:(UIControlState)state
+{
+    [super setAttributedTitle:title forState:state];
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
+- (void)setImage:(UIImage *)image forState:(UIControlState)state
+{
+    [super setImage:image forState:state];
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
+- (void)setContentEdgeInsets:(UIEdgeInsets)contentEdgeInsets
+{
+    [super setContentEdgeInsets:contentEdgeInsets];
+    [self invalidateIntrinsicContentSize];
+    [self setNeedsLayout];
+}
+
 - (CGSize)intrinsicContentSize
 {
     UIEdgeInsets contentInsets = self.contentEdgeInsets;
@@ -379,6 +481,11 @@
 - (CGSize)sizeThatFits:(CGSize)size
 {
     return [self intrinsicContentSize];
+}
+
+- (NSString *)debugDescription
+{
+    return [NSString stringWithFormat:@"<%@: %p; frame = %@; icon margin = %.6f; icon position = %@; icon size = %@>", NSStringFromClass(self.class), self, NSStringFromCGRect(self.frame), self.iconMargin, NSStringFromIconPosition(self.iconPosition), NSStringFromCGSize(self.iconSize)];
 }
 
 @end
