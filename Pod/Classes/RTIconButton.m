@@ -71,7 +71,7 @@ static inline NSString * NSStringFromIconPosition(RTIconPosition position) {
 - (CGSize)iconSize
 {
     if (CGSizeEqualToSize(_iconSize, CGSizeZero)) {
-        return [super imageRectForContentRect:CGRectMake(0, 0, CGFLOAT_MAX, CGFLOAT_MAX)].size;
+        return self.currentImage.size;
     }
     if (self.currentImage)
         return _iconSize;
@@ -139,9 +139,11 @@ static inline NSString * NSStringFromIconPosition(RTIconPosition position) {
             switch (_iconPosition) {
                 case RTIconPositionRight:
                     rect.origin.x = CGRectGetMinX(contentRect);
+                    rect.size.width = MIN(size.width, CGRectGetWidth(contentRect) - iconSize.width - margin);
                     break;
                 case RTIconPositionLeft:
-                    rect.origin.x = CGRectGetMaxX(contentRect) - size.width;
+                    rect.size.width = MIN(size.width, CGRectGetWidth(contentRect) - iconSize.width - margin);
+                    rect.origin.x = CGRectGetMaxX(contentRect) - rect.size.width;
                     break;
                 default:
                     rect.origin.x = CGRectGetMinX(contentRect) + (CGRectGetWidth(contentRect) - size.width) / 2;
@@ -193,10 +195,12 @@ static inline NSString * NSStringFromIconPosition(RTIconPosition position) {
         case UIControlContentVerticalAlignmentFill:
             switch (_iconPosition) {
                 case RTIconPositionTop:
-                    rect.origin.y = CGRectGetMaxY(contentRect) - size.height;
+                    rect.size.height = MIN(size.height, CGRectGetHeight(contentRect) - iconSize.height - margin);
+                    rect.origin.y = CGRectGetMaxY(contentRect) - rect.size.height;
                     break;
                 case RTIconPositionBottom:
                     rect.origin.y = CGRectGetMinY(contentRect);
+                    rect.size.height = MIN(size.height, CGRectGetHeight(contentRect) - iconSize.height - margin);
                     break;
                 default:
                     rect.origin.y = CGRectGetMinY(contentRect) + (CGRectGetHeight(contentRect) - size.height) / 2;
@@ -285,7 +289,8 @@ static inline NSString * NSStringFromIconPosition(RTIconPosition position) {
                     rect.origin.x = CGRectGetMinX(contentRect);
                     break;
                 default:
-                    rect.origin.x = CGRectGetMinX(contentRect) + (CGRectGetWidth(contentRect) - size.width) / 2;
+                    rect.size.width = CGRectGetWidth(contentRect);
+                    rect.origin.x = CGRectGetMinX(contentRect) + (CGRectGetWidth(contentRect) - rect.size.width) / 2;
                     break;
             }
             break;
@@ -340,7 +345,8 @@ static inline NSString * NSStringFromIconPosition(RTIconPosition position) {
                     rect.origin.y = CGRectGetMaxY(contentRect) - size.height;
                     break;
                 default:
-                    rect.origin.y = CGRectGetMinY(contentRect) + (CGRectGetHeight(contentRect) - size.height) / 2;
+                    rect.size.height = CGRectGetHeight(contentRect);
+                    rect.origin.y = CGRectGetMinY(contentRect) + (CGRectGetHeight(contentRect) - rect.size.height) / 2;
                     break;
             }
             break;
