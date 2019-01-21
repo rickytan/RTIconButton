@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26E6FE4118B552DE08715D4B /* Pods_RTIconButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E923E51AF2CDA0737451936B /* Pods_RTIconButton_Example.framework */; };
+		599C063E3EA83B4B48760A1A /* Pods_RTIconButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88102FFB4124D4561ED68FAA /* Pods_RTIconButton_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -23,8 +23,8 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6D9E0FA01CA3840500185793 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6D9E0F9F1CA3840500185793 /* LaunchScreen.xib */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		8E753DBDD37BBD7AC9E0072F /* Pods_RTIconButton_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1292BE4F2976AEFA0B9401C7 /* Pods_RTIconButton_Tests.framework */; };
 		9C93D26B1F26DBAF0056F456 /* RTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C93D26A1F26DBAF0056F456 /* RTTableViewController.m */; };
+		F7EC890EB81436D660CB144C /* Pods_RTIconButton_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA820E4FA6C68CB9CDD74E47 /* Pods_RTIconButton_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1292BE4F2976AEFA0B9401C7 /* Pods_RTIconButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BD727A36BA13559CD886DC6 /* Pods-RTIconButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		55E18128C9D710633E3EEE74 /* Pods-RTIconButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		578620290D6C674AC6B0089F /* RTIconButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RTIconButton.podspec; path = ../RTIconButton.podspec; sourceTree = "<group>"; };
+		06708B6092FAA6A807499335 /* Pods-RTIconButton_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		578620290D6C674AC6B0089F /* RTIconButton.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RTIconButton.podspec; path = ../RTIconButton.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* RTIconButton_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTIconButton_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,14 +59,16 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		6B31EA637FA59CDE7A22447A /* Pods-RTIconButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6D9E0F9F1CA3840500185793 /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		9356061BF7A29475C2F16F13 /* Pods-RTIconButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		88102FFB4124D4561ED68FAA /* Pods_RTIconButton_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C93D2691F26DBAF0056F456 /* RTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RTTableViewController.h; sourceTree = "<group>"; };
 		9C93D26A1F26DBAF0056F456 /* RTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RTTableViewController.m; sourceTree = "<group>"; };
+		B1E5BF22DBE0A95684EC3682 /* Pods-RTIconButton_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C4C8A1E1987A8C3315E02964 /* Pods-RTIconButton_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		CBA236976FF6A5D5AD6E0E4E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		E923E51AF2CDA0737451936B /* Pods_RTIconButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F01292E35E7CE24348853D28 /* Pods-RTIconButton_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTIconButton_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		FA820E4FA6C68CB9CDD74E47 /* Pods_RTIconButton_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTIconButton_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD95EB735234C3E2C08F2953 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -80,7 +80,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				26E6FE4118B552DE08715D4B /* Pods_RTIconButton_Example.framework in Frameworks */,
+				F7EC890EB81436D660CB144C /* Pods_RTIconButton_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,13 +91,24 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				8E753DBDD37BBD7AC9E0072F /* Pods_RTIconButton_Tests.framework in Frameworks */,
+				599C063E3EA83B4B48760A1A /* Pods_RTIconButton_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5B561F28FEEDA22650D0D40B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C4C8A1E1987A8C3315E02964 /* Pods-RTIconButton_Example.debug.xcconfig */,
+				B1E5BF22DBE0A95684EC3682 /* Pods-RTIconButton_Example.release.xcconfig */,
+				6B31EA637FA59CDE7A22447A /* Pods-RTIconButton_Tests.debug.xcconfig */,
+				06708B6092FAA6A807499335 /* Pods-RTIconButton_Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -106,7 +117,7 @@
 				6003F5B5195388D20070C39A /* Tests */,
 				6003F58C195388D20070C39A /* Frameworks */,
 				6003F58B195388D20070C39A /* Products */,
-				AA359CD8CAD3A3247193FE3C /* Pods */,
+				5B561F28FEEDA22650D0D40B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,8 +137,8 @@
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
 				6003F5AF195388D20070C39A /* XCTest.framework */,
-				E923E51AF2CDA0737451936B /* Pods_RTIconButton_Example.framework */,
-				1292BE4F2976AEFA0B9401C7 /* Pods_RTIconButton_Tests.framework */,
+				FA820E4FA6C68CB9CDD74E47 /* Pods_RTIconButton_Example.framework */,
+				88102FFB4124D4561ED68FAA /* Pods_RTIconButton_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -190,17 +201,6 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
-		AA359CD8CAD3A3247193FE3C /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				55E18128C9D710633E3EEE74 /* Pods-RTIconButton_Example.debug.xcconfig */,
-				9356061BF7A29475C2F16F13 /* Pods-RTIconButton_Example.release.xcconfig */,
-				F01292E35E7CE24348853D28 /* Pods-RTIconButton_Tests.debug.xcconfig */,
-				2BD727A36BA13559CD886DC6 /* Pods-RTIconButton_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,12 +208,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "RTIconButton_Example" */;
 			buildPhases = (
-				08195C9E17DF6C4076D98664 /* Check Pods Manifest.lock */,
+				1D8147620B6870DD1725C9C9 /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				A0C96A08B16496E381675512 /* Embed Pods Frameworks */,
-				D2318100DB79C46C9B9D2225 /* Copy Pods Resources */,
+				38E287909D7E917C1297B3CD /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -228,12 +227,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "RTIconButton_Tests" */;
 			buildPhases = (
-				430BD53C5C2F545E079C9A69 /* Check Pods Manifest.lock */,
+				7E6DD7E8D860F642FEC36AAB /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				CC439FC3238D9214778CA4FE /* Embed Pods Frameworks */,
-				18C136915880E8E96FA45600 /* Copy Pods Resources */,
+				22BE0A001723CFD39B21A07C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,7 +250,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = RT;
-				LastUpgradeCheck = 0510;
+				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = rickytan;
 				TargetAttributes = {
 					6003F5AD195388D20070C39A = {
@@ -302,94 +300,92 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		08195C9E17DF6C4076D98664 /* Check Pods Manifest.lock */ = {
+		1D8147620B6870DD1725C9C9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTIconButton_Example-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		18C136915880E8E96FA45600 /* Copy Pods Resources */ = {
+		22BE0A001723CFD39B21A07C /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		430BD53C5C2F545E079C9A69 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RTIconButton/RTIconButton.framework",
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		A0C96A08B16496E381675512 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CC439FC3238D9214778CA4FE /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTIconButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTIconButton_Tests/Pods-RTIconButton_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D2318100DB79C46C9B9D2225 /* Copy Pods Resources */ = {
+		38E287909D7E917C1297B3CD /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RTIconButton/RTIconButton.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTIconButton.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RTIconButton_Example/Pods-RTIconButton_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7E6DD7E8D860F642FEC36AAB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RTIconButton_Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -452,18 +448,32 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -476,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -491,25 +501,38 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -518,13 +541,14 @@
 		};
 		6003F5C0195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 55E18128C9D710633E3EEE74 /* Pods-RTIconButton_Example.debug.xcconfig */;
+			baseConfigurationReference = C4C8A1E1987A8C3315E02964 /* Pods-RTIconButton_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RTIconButton/RTIconButton-Prefix.pch";
 				INFOPLIST_FILE = "RTIconButton/RTIconButton-Info.plist";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -532,13 +556,14 @@
 		};
 		6003F5C1195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9356061BF7A29475C2F16F13 /* Pods-RTIconButton_Example.release.xcconfig */;
+			baseConfigurationReference = B1E5BF22DBE0A95684EC3682 /* Pods-RTIconButton_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RTIconButton/RTIconButton-Prefix.pch";
 				INFOPLIST_FILE = "RTIconButton/RTIconButton-Info.plist";
 				MODULE_NAME = ExampleApp;
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -546,7 +571,7 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F01292E35E7CE24348853D28 /* Pods-RTIconButton_Tests.debug.xcconfig */;
+			baseConfigurationReference = 6B31EA637FA59CDE7A22447A /* Pods-RTIconButton_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -561,6 +586,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTIconButton_Example.app/RTIconButton_Example";
 				WRAPPER_EXTENSION = xctest;
@@ -569,7 +595,7 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2BD727A36BA13559CD886DC6 /* Pods-RTIconButton_Tests.release.xcconfig */;
+			baseConfigurationReference = 06708B6092FAA6A807499335 /* Pods-RTIconButton_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -580,6 +606,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
 				INFOPLIST_FILE = "Tests/Tests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RTIconButton_Example.app/RTIconButton_Example";
 				WRAPPER_EXTENSION = xctest;

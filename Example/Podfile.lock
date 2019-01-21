@@ -1,5 +1,5 @@
 PODS:
-  - RTIconButton (1.0.1)
+  - RTIconButton (1.1.7)
 
 DEPENDENCIES:
   - RTIconButton (from `../`)
@@ -9,6 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RTIconButton: 6262a7e5e6ea91da5031bb5f0cad7e057245b2f8
+  RTIconButton: 32ddf412ccf1ba4a3d88c4c43175c0554c42f938
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 5bc320f360154030c260e39adcfd630997e467ca
+
+COCOAPODS: 1.5.3

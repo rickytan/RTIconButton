@@ -386,7 +386,11 @@ static inline NSString * NSStringFromIconPosition(RTIconPosition position) {
     }
 }
 
+#if TARGET_INTERFACE_BUILDER
 - (void)setIconPosition:(NSInteger)iconPosition
+#else
+- (void)setIconPosition:(RTIconPosition)iconPosition
+#endif
 {
     if (_iconPosition != iconPosition) {
         _iconPosition = iconPosition;

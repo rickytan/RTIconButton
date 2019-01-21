@@ -33,6 +33,10 @@ typedef NS_ENUM(NSInteger, RTIconPosition) {
 IB_DESIGNABLE
 @interface RTIconButton : UIButton
 @property (nonatomic, assign) IBInspectable CGFloat iconMargin;
+#if TARGET_INTERFACE_BUILDER
 @property (nonatomic, assign) IBInspectable NSInteger iconPosition;
+#else
+@property (nonatomic, assign) RTIconPosition iconPosition;
+#endif
 @property (nonatomic, assign) IBInspectable CGSize iconSize;    // default is image size;
 @end
